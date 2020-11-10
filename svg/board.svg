@@ -31,9 +31,14 @@
     </g>
     <g id="menu">
         <g>
-            <text x="340" y="40" class="menuText">
-                Wybierz gracza
-            </text>
+            <switch>
+                <text systemLanguage="pl" x="340" y="40" class="menuText">
+                    Wybierz gracza
+                </text>
+                <text systemLanguage="en" x="340" y="40" class="menuText">
+                    Choose player
+                </text>
+            </switch>
         </g>
         <g>
             <title>circle</title>
