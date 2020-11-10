@@ -2,10 +2,13 @@
     <style>
         .background{fill:white}
         .board{fill:rgba(116,117,119,1);}
+        .menuText{font: italic 40px serif; fill: slategrey;}
+        .resetText{font: italic 25px serif; fill: slategrey;}
         .circle { stroke:green; stroke-width:5; fill:white;}
         .cross{ stroke:blue; stroke-width:5;}
         .field{ fill: white;}
         .winLine{stroke:red; stroke-width:3;}
+        .reset{fill:rgba(79, 190, 28,0.8) ;}
     </style>
     <g id="gBackground">
         <rect id="background" class="background" width="600" height="320"  />
@@ -28,14 +31,29 @@
     </g>
     <g id="menu">
         <g>
-            <title>circle</title>
-            <circle id ="circle0" cx="450" cy="50" r="30" class="circle" />    
+            <text x="340" y="40" class="menuText">
+                Wybierz gracza
+            </text>
         </g>
-        <g id="cross0" class="cross" >
+        <g>
+            <title>circle</title>
+            <rect id="field0"  width="80" height="80" x="410" y="60" class="field"/>
+            <circle id ="circle0" cx="450" cy="100" r="30" class="circle" />    
+        </g>
+        <g id="cross0">
             <title>cross</title>
-            <line x1="420" x2="480" y1="130" y2="190" />
-            <line x1="480" x2="420" y1="130" y2="190" />    
-        </g>    
+            <rect id="field0"  width="80" height="80" x="410" y="150" class="field" />
+            <g class="cross" >
+                <line x1="420" x2="480" y1="160" y2="220" />
+                <line x1="480" x2="420" y1="160" y2="220" />    
+            </g>
+        </g>
+        <g id="reset">
+            <ellipse cx="450" cy="280" rx="60" ry="30" class="reset"/>    
+            <text x="412" y="290" class="resetText">
+                RESET
+            </text>
+        </g>
     </g>    
     <g id="circles" class="circle" >
         <title>circle</title>  
