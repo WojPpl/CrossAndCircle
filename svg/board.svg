@@ -33,7 +33,7 @@
     </g>
     <g id="gCircle" display="">
         <title>circle</title>
-        <circle id ="circle"cx="40" cy="40" r="30" stroke="green" stroke-width="5" fill="white"/>
+        <circle id ="circle" cx="40" cy="40" r="30" stroke="green" stroke-width="5" fill="white"/>
     </g>
     
     <g id="gCross" display="">
