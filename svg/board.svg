@@ -6,67 +6,150 @@
     <g id="gBoard">
         <title>board</title>
         <rect id="board" fill="rgba(116,117,119,1)" width="320" height="320"  />
+        <g>
+            <title>fields</title>
+            <g id="gField1">
+                <rect id="field1" fill="white" width="100" height="100" x="0" y="0" />
+            </g>
+            <g id="gField2">
+                <rect id="field2" fill="white" width="100" height="100" x="110" y="0"  />
+            </g>
+            <g id="gField3">
+                <rect id="field3" fill="white" width="100" height="100" x="220" y="0"  />
+            </g>
+            <g id="gField4">
+                <rect id="field4" fill="white" width="100" height="100" x="0" y="110"  />
+            </g>
+            <g id="gField5">
+                <rect id="field5" fill="white" width="100" height="100" x="110" y="110"  />
+            </g>
+            <g id="gField6">
+                <rect id="field6" fill="white" width="100" height="100" x="220" y="110"  />
+            </g>
+            <g id="gField7">
+                <rect id="field7" fill="white" width="100" height="100" x="0" y="220"  />
+            </g>
+            <g id="gField8">
+                <rect id="field8" fill="white" width="100" height="100" x="110" y="220"  />
+            </g>
+            <g id="gField9">
+                <rect id="field9" fill="white" width="100" height="100" x="220" y="220"  />
+            </g>
+        </g>
+        
     </g>
-    <g id="gField1">
-        <rect id="field1" fill="white" width="100" height="100" x="0" y="0" />
-    </g>
-    <g id="gField2">
-        <rect id="field2" fill="white" width="100" height="100" x="110" y="0"  />
-    </g>
-    <g id="gField3">
-        <rect id="field3" fill="white" width="100" height="100" x="220" y="0"  />
-    </g>
-    <g id="gField4">
-        <rect id="field4" fill="white" width="100" height="100" x="0" y="110"  />
-    </g>
-    <g id="gField5">
-        <rect id="field5" fill="white" width="100" height="100" x="110" y="110"  />
-    </g>
-    <g id="gField6">
-        <rect id="field6" fill="white" width="100" height="100" x="220" y="110"  />
-    </g>
-    <g id="gField7">
-        <rect id="field7" fill="white" width="100" height="100" x="0" y="220"  />
-    </g>
-    <g id="gField8">
-        <rect id="field8" fill="white" width="100" height="100" x="110" y="220"  />
-    </g>
-    <g id="gField9">
-        <rect id="field9" fill="white" width="100" height="100" x="220" y="220"  />
-    </g>
-    <g id="gCircle" display="">
-        <title>circle</title>
-        <circle id ="circle" cx="50" cy="50" r="30" stroke="green" stroke-width="5" fill="white"/>
-    </g>
-    
-    <g id="gCross" display="">
-        <title>cross</title>
-        <line x1="20" x2="80" y1="20" y2="80" style="stroke:blue;stroke-width:5" />
-        <line x1="80" x2="20" y1="20" y2="80" style="stroke:blue;stroke-width:5" />    
-    </g>
+    <g id="crossAndCircles">
+        <title>cross and circles</title>
+        <g id="field1">
+            <g id="gCircle" display="">
+                <title>circle</title>
+                <circle id ="circle" cx="50" cy="50" r="30" stroke="green" stroke-width="5" fill="white"/>
+            </g>
+            <g id="gCross" display="">
+                <title>cross</title>
+                <line x1="20" x2="80" y1="20" y2="80" style="stroke:blue;stroke-width:5" />
+                <line x1="80" x2="20" y1="20" y2="80" style="stroke:blue;stroke-width:5" />    
+            </g>    
+        </g>
+        <g id="field2">
+            <g id="gCircle" display="">
+                <title>circle</title>
+                <circle id ="circle" cx="160" cy="50" r="30" stroke="green" stroke-width="5" fill="white"/>
+            </g>
+            <g id="gCross" display="">
+                <title>cross</title>
+                <line x1="130" x2="190" y1="20" y2="80" style="stroke:blue;stroke-width:5" />
+                <line x1="190" x2="130" y1="20" y2="80" style="stroke:blue;stroke-width:5" />    
+            </g>    
+        </g>
+        <g id="field3">
+            <g id="gCircle" display="">
+                <title>circle</title>
+                <circle id ="circle" cx="270" cy="50" r="30" stroke="green" stroke-width="5" fill="white"/>
+            </g>
+            <g id="gCross" display="">
+                <title>cross</title>
+                <line x1="240" x2="300" y1="20" y2="80" style="stroke:blue;stroke-width:5" />
+                <line x1="300" x2="240" y1="20" y2="80" style="stroke:blue;stroke-width:5" />    
+            </g>    
+        </g>
+        <g id="field4">
+            <g id="gCircle" display="">
+                <title>circle</title>
+                <circle id ="circle" cx="50" cy="160" r="30" stroke="green" stroke-width="5" fill="white"/>
+            </g>
+            <g id="gCross" display="">
+                <title>cross</title>
+                <line x1="20" x2="80" y1="130" y2="190" style="stroke:blue;stroke-width:5" />
+                <line x1="80" x2="20" y1="130" y2="190" style="stroke:blue;stroke-width:5" />    
+            </g>    
+        </g>
+        <g id="field5">
+            <g id="gCircle" display="">
+                <title>circle</title>
+                <circle id ="circle" cx="160" cy="160" r="30" stroke="green" stroke-width="5" fill="white"/>
+            </g>
+            <g id="gCross" display="">
+                <title>cross</title>
+                <line x1="130" x2="190" y1="130" y2="190" style="stroke:blue;stroke-width:5" />
+                <line x1="190" x2="130" y1="130" y2="190" style="stroke:blue;stroke-width:5" />    
+            </g>    
+        </g>
+        <g id="field6">
+            <g id="gCircle" display="">
+                <title>circle</title>
+                <circle id ="circle" cx="270" cy="160" r="30" stroke="green" stroke-width="5" fill="white"/>
+            </g>
+            <g id="gCross" display="">
+                <title>cross</title>
+                <line x1="240" x2="300" y1="130" y2="190" style="stroke:blue;stroke-width:5" />
+                <line x1="300" x2="240" y1="130" y2="190" style="stroke:blue;stroke-width:5" />    
+            </g>    
+        </g>
+        <g id="field7">
+            <g id="gCircle" display="">
+                <title>circle</title>
+                <circle id ="circle" cx="50" cy="270" r="30" stroke="green" stroke-width="5" fill="white"/>
+            </g>
+            <g id="gCross" display="">
+                <title>cross</title>
+                <line x1="20" x2="80" y1="240" y2="300" style="stroke:blue;stroke-width:5" />
+                <line x1="80" x2="20" y1="240" y2="300" style="stroke:blue;stroke-width:5" />    
+            </g>    
+        </g>
+        <g id="field8">
+            <g id="gCircle" display="">
+                <title>circle</title>
+                <circle id ="circle" cx="160" cy="270" r="30" stroke="green" stroke-width="5" fill="white"/>
+            </g>
+            <g id="gCross" display="">
+                <title>cross</title>
+                <line x1="130" x2="190" y1="240" y2="300" style="stroke:blue;stroke-width:5" />
+                <line x1="190" x2="130" y1="240" y2="300" style="stroke:blue;stroke-width:5" />    
+            </g>    
+        </g>
+        <g id="field9">
+            <g id="gCircle" display="">
+                <title>circle</title>
+                <circle id ="circle" cx="270" cy="270" r="30" stroke="green" stroke-width="5" fill="white"/>
+            </g>
+            <g id="gCross" display="">
+                <title>cross</title>
+                <line x1="240" x2="300" y1="240" y2="300" style="stroke:blue;stroke-width:5" />
+                <line x1="300" x2="240" y1="240" y2="300" style="stroke:blue;stroke-width:5" />    
+            </g>    
+        </g>
 
-    <g id="gWinFields123">
+        
+    <g id="winLines">
+        <title>win lines</title>
         <line id="winFields123" x1="10" x2="310" y1="50" y2="50" style="stroke:red;stroke-width:3" />  
-    </g>
-    <g id="gWinFields456">
         <line id="winFields456" x1="10" x2="310" y1="160" y2="160" style="stroke:red;stroke-width:3" />  
-    </g>
-    <g id="gWinFields789">
         <line id="winFields789" x1="10" x2="310" y1="270" y2="270" style="stroke:red;stroke-width:3" />  
-    </g>
-    <g id="gWinFields147">
         <line id="winFields147" x1="50" x2="50" y1="10" y2="310" style="stroke:red;stroke-width:3" />  
-    </g>
-    <g id="gWinFields258">
         <line id="winFields258" x1="160" x2="160" y1="10" y2="310" style="stroke:red;stroke-width:3" />  
-    </g>
-    <g id="gWinFields369">
         <line id="winFields369" x1="270" x2="270" y1="10" y2="310" style="stroke:red;stroke-width:3" />  
-    </g>
-    <g id="gWinFields159">
         <line id="winFields159" x1="10" x2="310" y1="10" y2="310" style="stroke:red;stroke-width:3" />  
-    </g>
-    <g id="gWinFields357">
         <line id="winFields357" x1="310" x2="10" y1="10" y2="310" style="stroke:red;stroke-width:3" />  
     </g>
 </svg>
