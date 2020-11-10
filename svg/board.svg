@@ -1,11 +1,19 @@
 <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .background{fill:white}
+        .board{fill:rgba(116,117,119,1);}
+        .circle { stroke:green; stroke-width:5; fill:white;}
+        .cross{ stroke:blue; stroke-width:5;}
+        .field{ fill: white;}
+        .winLine{stroke:red; stroke-width:3;}
+    </style>
     <g id="gBackground">
-        <rect id="background" fill="white" width="600" height="320"  />
+        <rect id="background" class="background" width="600" height="320"  />
     </g>
     <g id="gBoard">
         <title>board</title>
-        <rect id="board" fill="rgba(116,117,119,1)" width="320" height="320"  />
-        <g id="fields" fill="white" >
+        <rect id="board" class="board" width="320" height="320"  />
+        <g id="fields" class="field" >
             <title>field</title>
             <rect id="field1"  width="100" height="100" x="0" y="0" />
             <rect id="field2"  width="100" height="100" x="110" y="0"  />
@@ -21,15 +29,15 @@
     <g id="menu">
         <g>
             <title>circle</title>
-            <circle id ="circle0" cx="450" cy="50" r="30" stroke="green" stroke-width="5" fill="white" />    
+            <circle id ="circle0" cx="450" cy="50" r="30" class="circle" />    
         </g>
-        <g id="cross0" style="stroke:blue;stroke-width:5" >
+        <g id="cross0" class="cross" >
             <title>cross</title>
             <line x1="420" x2="480" y1="130" y2="190" />
             <line x1="480" x2="420" y1="130" y2="190" />    
         </g>    
     </g>    
-    <g id="circles" stroke="green" stroke-width="5" fill="white">
+    <g id="circles" class="circle" >
         <title>circle</title>  
             <circle id ="circle1" cx="50" cy="50" r="30" />
             <circle id ="circle2" cx="160" cy="50" r="30" />
@@ -41,7 +49,7 @@
             <circle id ="circle8" cx="160" cy="270" r="30" />
             <circle id ="circle9" cx="270" cy="270" r="30" />
     </g>
-    <g id="crosses" style="stroke:blue;stroke-width:5" display="">
+    <g id="crosses" class="cross" display="">
         <title>cross</title>
         <g id="cross1" >
             <line x1="20" x2="80" y1="20" y2="80" />
@@ -80,7 +88,7 @@
             <line x1="300" x2="240" y1="240" y2="300" />    
         </g>
     </g>  
-    <g id="winLines" style="stroke:red;stroke-width:3">
+    <g id="winLines" class="winLine" >
         <title>win line</title>
         <line id="winFields123" x1="10" x2="310" y1="50" y2="50" />  
         <line id="winFields456" x1="10" x2="310" y1="160" y2="160" />  
