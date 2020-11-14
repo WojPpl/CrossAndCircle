@@ -54,6 +54,7 @@
             </g>
         </g>
         <g id="reset">
+            <title>reset</title>
             <ellipse cx="450" cy="280" rx="60" ry="30" class="reset"/>    
             <text x="412" y="290" class="resetText">
                 RESET
