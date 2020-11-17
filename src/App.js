@@ -10,15 +10,6 @@ const App = () => {
   const [aiMove, setAiMove] = useState();
 
 
-  // const createPositions = () => {
-  //   let board = [];
-  //   for (let i = 0; i < 3; i++) {
-  //     for (let j = 0; j < 3; j++) {
-  //     board.push({x: i, y: j})
-  //     }
-  //   }
-  //   return board
-  // }
   const createPositions = () => {
     let board = [];
     for (let i = 0; i < 9; i++) {
@@ -27,6 +18,11 @@ const App = () => {
     return board
   }
 
+  // const turnAi = () =>{
+  //   if (isCircle) {
+  //     setAiMove(makeAiMove(moves));
+  //   }
+  // }
 
   const clickGameButton = data => {
     let actualMoves = moves;
@@ -35,13 +31,14 @@ const App = () => {
     if (isCircle) {
       setAiMove(makeAiMove(moves));
     }
+   // turnAi();
     setIsCircle(!isCircle);
   }
 
   return (
     <div className="App">
       {createPositions().map((singlePosition, index) => (
-        <GameButton positionX={singlePosition.x} buttonClick={clickGameButton}
+        <GameButton position={singlePosition.x} buttonClick={clickGameButton}
           player={isCircle} aiMove={aiMove} key={index} />))}
     </div>
   );

@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Styles from "./styles";
 
-const GameButton = ({ buttonClick, positionX, player, aiMove }) => {
+const GameButton = ({ buttonClick, position, player, aiMove }) => {
     const [move, setMove] = useState(false);
     const [buttonFrozen, setButtonFrozen] = useState();
 
     useEffect(() => {
-        if (aiMove?.x === positionX) {
-            handleOnClick()
+        if (aiMove?.x === position) {
+            handleOnClick();
         }
     }, [aiMove]);
     const chooseBorderStyle = () => {
         let style;
-        switch (positionX) {
+        switch (position) {
             case 1: style = Styles.sideBorder; break;
             case 3: style = Styles.horizontalBorder; break;
             case 4: style = Styles.fullBorder; break;
@@ -29,7 +29,7 @@ const GameButton = ({ buttonClick, positionX, player, aiMove }) => {
         setButtonFrozen(player ? "0" : "x");
         buttonClick(
             {
-                positionX: positionX,
+                position: position,
                 player: player ? "0" : "x"
             }
         )
@@ -40,7 +40,7 @@ const GameButton = ({ buttonClick, positionX, player, aiMove }) => {
 
 
 GameButton.propTypes = {
-    positionX: PropTypes.number
+    position: PropTypes.number
 }
 
 export default GameButton;
