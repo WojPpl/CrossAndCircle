@@ -18,21 +18,22 @@ const App = () => {
     return board
   }
 
-  // const turnAi = () =>{
-  //   if (isCircle) {
-  //     setAiMove(makeAiMove(moves));
-  //   }
-  // }
+  const turnAi = () => {
+    if (isCircle) {
+      setAiMove(makeAiMove(moves));
+    }
+  }
+  
+  const changedPlayer = () => {
+    setIsCircle(!isCircle);
+  }
 
   const clickGameButton = data => {
     let actualMoves = moves;
     actualMoves.push(data);
     setMoves(actualMoves);
-    if (isCircle) {
-      setAiMove(makeAiMove(moves));
-    }
-   // turnAi();
-    setIsCircle(!isCircle);
+    turnAi();
+    changedPlayer();
   }
 
   return (
