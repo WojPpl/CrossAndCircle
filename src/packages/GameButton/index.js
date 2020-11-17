@@ -11,6 +11,7 @@ const GameButton = ({ buttonClick, position, player, aiMove }) => {
             handleOnClick();
         }
     }, [aiMove]);
+    
     const chooseBorderStyle = () => {
         let style;
         switch (position) {
@@ -35,7 +36,8 @@ const GameButton = ({ buttonClick, position, player, aiMove }) => {
         )
     }
 
-    return (<div style={chooseBorderStyle()} onClick={!buttonFrozen ? () => { handleOnClick() } : console.log()}>{move ? buttonFrozen ? buttonFrozen : player ? "o" : "x" : ""}</div>)
+    return (<div style={chooseBorderStyle()} onClick={!buttonFrozen ? () => 
+            { handleOnClick() } : console.log()}>{move ? buttonFrozen ? buttonFrozen : player ? "o" : "x" : ""}</div>)
 }
 
 

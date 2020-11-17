@@ -10,6 +10,7 @@ const allPlaces = [
     { x: 8 },
 ];
 //const allPlaces = Array.from(Array(9).keys());
+
 const makeAiMove = moves => {
     // console.log("helper");
     // console.log(moves);
