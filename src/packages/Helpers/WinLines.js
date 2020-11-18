@@ -1,19 +1,25 @@
-export function checkWinner(squares){
-    const winLines = [
-        [0,1,2],
-        [3,4,5],
-        [6,7,8],
-        [0,3,6],
-        [1,4,7],
-        [2,5,8],
-        [2,4,6],
-        [0,4,8]
-    ];
-    for (let i=0; i <winLines.length; i++){
-        const [a,b,c] = lines[i];
-        if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]){
-            return squares[a]
-        }
+
+const winLines = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [2, 4, 6],
+  [0, 4, 8]
+];
+
+const checkWin = (playersMoves, gamer) => {
+  let playerMoves = playersMoves.filter(move => move.player === gamer).map(move => move.position).sort();
+
+  let gameWon = null;
+  for (let [index, win] of winLines.entries()) {
+    if (win.every(elem => playerMoves.indexOf(elem) > -1)) {
+      gameWon = { index: index, player: gamer };
+      break;
     }
-    return null;
+  }
+  return gameWon;
 }
+export default checkWin;

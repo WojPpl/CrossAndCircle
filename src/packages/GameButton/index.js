@@ -27,7 +27,7 @@ const GameButton = ({ buttonClick, position, player, aiMove }) => {
 
     const handleOnClick = () => {
         setMove(true);
-        setButtonFrozen(player ? "0" : "x");
+        setButtonFrozen(  player ? "0" : "x");
         buttonClick(
             {
                 position: position,
